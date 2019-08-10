@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SearcCitiesActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolprofile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rounded"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where in Abohar?"
+            android:layout_marginLeft="130dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            />
+        <ImageView
+            android:id="@+id/imgquestion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/ic_search_black_24dp"
+            android:textSize="15sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+<ImageView
+    android:id="@+id/imgtody"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:layout_constraintTop_toBottomOf="@+id/toolprofile"
+    app:layout_constraintStart_toStartOf="parent"
+    android:src="@drawable/cap"
+    android:scaleType="fitXY"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp" />
+<View
+    android:id="@+id/view1"
+    android:layout_width="0dp"
+    android:layout_height="0.5dp"
+    app:layout_constraintTop_toBottomOf="@+id/imgtody"
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="@color/colorPrimary"
+    />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layall"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="ALL Of Abohar"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/rightarrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtall"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECENT SEARCH"
+        app:layout_constraintTop_toBottomOf="@+id/layall"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclertopcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtsearch"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/conpopular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/recyclertopcity"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    <TextView
+        android:id="@+id/txtpopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POPULAR LOCALITIES"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/malout"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtpopular"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Malout"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/txtpatial"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtpopular"
+            app:layout_constraintStart_toEndOf="@+id/malout"
+            android:text="Patiala Children Hospital"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/txtcivil"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/malout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Civil Hospital Abohar"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/txtKaali"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/malout"
+            app:layout_constraintStart_toEndOf="@+id/txtcivil"
+            android:text="Kaali Mata Mandir"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:id="@+id/txtsatyanarayan"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtKaali"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Kaali Mata Mandir"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/conpopular"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtalllocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="ALL LOCALITIES"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/txcivil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtalllocal"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Civil hospital Abohar"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@+id/txcivil"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/txtDhani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/view3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Dhani Ghulam"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+            <View
+                android:id="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtDhani"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/txtBhakshnan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:text="Dhani Bakhshan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+            <View
+                android:id="@+id/view5"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtBhakshnan"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimary"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

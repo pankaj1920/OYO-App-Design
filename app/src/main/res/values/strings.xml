@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">OyoApp</string>
+    <string-array name="array">
+
+
+    </string-array>
+    <string name="title_activity_oyo_home">OyoHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="dateofbirth">24/02/1993</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date">04 jul,2019</string>
+    <string name="credit">Credt card,Debit Card,Net Banking and other payment \n options are available while booking the hotel</string>
+    <string name="travel">The time to #Let The TravelBegin. Book now</string>
+    <string name="how_this_work">How this work? </string>
+    <string name="friendget">Rs.100 on signup \n+ 60% off on first</string>
+    <string name="benifit">What is the benifit under the referral\n program ?</string>
+    <string name="freestay">How do i get a free stay from the referral\n program ?</string>
+    <string name="veryclose">I was very close to reach my bonus reward.\nBut, now my score has been reset.why has \nthis happened ?</string>
+    <string name="maximum">What is the maximum OYO Rupee that i can \nearn through this program ?</string>
+    <string name="limit">Is there a limit om the refarral invites i can \nsend ?</string>
+    <string name="more">I have already earned 10000 OYO Rupees. can i \ninvite more friend ? </string>
+    <string name="country">can i invite a friend from country ?</string>
+    <string name="additional">5% additional discount on all wizard member hotels \n10% on wizard base</string>
+    <string name="title_activity_hotelsandhomestab">hotelsandhomestab</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="comfort">Large living rooms, fully loaded kitchens and \nprivate balconies </string>
+    <string name="beauty">Beautful Villas,apartments and bungalows\n suitable for everyone</string>
+    <string name="terms">Bank Of Maroda Credit Card users to get 35% \n Discount wiht Coupan code BOBOYO/n
+    Offer dartails.\n1. Get 35% Discount on Payment via Bank Of Baroda Credit Card,Use code:BOBOYO\n
+    2.Offer only applicable only on application of coupan\n code BOBOYO with Bank Of Baroda Credit Card Transaction.\n.
+        \n1. Get 35% Discount on Payment via Bank Of Baroda Credit Card,Use code:BOBOYO\n
+    2.Offer only applicable only on application of coupan\n code BOBOYO with Bank Of Baroda Credit Card Transaction.\n </string>
+    <string name="invite_and_earn">Invite and Earn\n <i>refer your friends and earn OYO Rupees</i></string>
+</resources>
+
+

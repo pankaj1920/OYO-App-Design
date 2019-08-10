@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/one"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/two"
+        android:title="Saved"
+        android:icon="@drawable/heart"/>
+
+    <item android:id="@+id/three"
+          android:title="Booking"
+          android:icon="@drawable/briefcase"/>
+
+    <item
+        android:id="@+id/four"
+        android:title="Invite &amp; Earn"
+        android:icon="@drawable/adduser"/>
+</menu>
